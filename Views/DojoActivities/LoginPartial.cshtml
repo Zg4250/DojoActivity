@@ -1,0 +1,15 @@
+@model LoginUser
+
+
+    <form asp-action="ValidateLogin" asp-controller="DojoActivities" method="post">
+            <span asp-validation-for="Login_Email"></span><br>
+            <label asp-for="Login_Email"></label><br>
+            <input class="form-control-lg" asp-for="Login_Email"><br>
+
+            <span asp-validation-for="Login_Password"></span><br>
+            <label asp-for="Login_Password"></label><br>
+            <input class="form-control-lg" asp-for="Login_Password"><br>
+       
+        <br><br>
+        <input value="Login" type="submit">    
+    </form>
